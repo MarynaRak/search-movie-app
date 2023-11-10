@@ -1,0 +1,209 @@
+html, body {
+  height: 100%;
+  background-color: rgb(207, 186, 228);
+}
+
+body {
+  width: 1440px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+
+.main-page {
+  display: none;
+}
+
+.form-wrapper {
+  margin-top: 102px;
+  margin-left: 193px;
+  margin-bottom: 48px;
+  display: flex;
+  gap: 24px;
+}
+
+.input {
+  width: 500px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid rgb(98, 15, 119);
+  border-radius: 20px;
+  background: transparent;
+}
+
+.input::placeholder {
+  padding: 0;
+  color: #f1eded;
+  font-size: 32px;
+}
+
+.search-btn {
+  width: 250px;
+  background-color: #0f476e;
+  border: none;
+  border-radius: 20px;
+  color: #f1eded;
+  font-size: 32px;
+  line-height: 60px;
+  padding-left: 70px;
+  padding-right: 70px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #000;
+  transition: 0.2s;
+}
+
+.movie-list-wrapper {
+  margin-left: 160px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.empty-movie-item-hidden {
+  margin-left: 33px;
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  opacity: 0;
+}
+
+.empty-movie-item {
+  opacity: 1;
+}
+
+.movie-item {
+  display: flex;
+  width: 660px;
+  height: 216px;
+  border-radius: 35px;
+}
+
+.movie-item:hover {
+  background: rgb(156, 129, 230);
+  cursor: pointer;
+}
+
+.movie-item-img {
+  width: 100px;
+  height: 148px;
+  margin: 41px 65px 26px 33px;
+}
+
+.movie-item-info {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-item-title {
+  width: 350px;
+  margin-bottom: 7px;
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie-item-title:hover {
+  white-space: normal;
+}
+
+.movie-item-year {
+  margin-bottom: 18px;
+  color: #d5e7f5;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.movie-item-description {
+  color: #000;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.cont {
+  width: 950px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.movie-page-container {
+  width: 100%;
+}
+
+.movie-page {
+  display: none;
+}
+
+.home-link {
+  margin-bottom: 107px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+.movie-card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  margin-bottom: 75px;
+}
+
+.movie-poster {
+  width: 300px;
+  height: 373px;
+}
+
+.movie-info-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-title {
+  margin-bottom: 34px;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 61px;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.movie-info .year,
+.movie-info .rating,
+.movie-info .released,
+.movie-info .duration,
+.movie-info .genre,
+.movie-info .director,
+.movie-info .script,
+.movie-info .actors {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.movie-info span {
+  color: #0094ff;
+}
+
+.movie-description {
+  margin: 0 auto;
+  width: 959px;
+  font-size: 30px;
+}

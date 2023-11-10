@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Find Film</title>
+  </head>
+  <body>
+    <div id="main-page">
+      <form class="form-wrapper">
+        <input
+          id="input"
+          type="text"
+          placeholder="Назва фільму англійською"
+          autocomplete="off"
+          class="input"
+        />
+        <button id="search-btn" class="search-btn">Знайти</button>
+      </form>
+      <ul id="search-result" class="movie-list-wrapper">
+        <li id="empty-movie-item" class="empty-movie-item-hidden">
+          Фільми не знайдено
+        </li>
+      </ul>
+    </div>
+    <div id="movie-page" class="movie-page-container movie-page">
+      
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
