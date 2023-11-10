@@ -7,6 +7,7 @@ const mainPageListNode = document.getElementById('main-page');
 const homeLinkBtn = document.getElementById('home-link-btn');
 
 const userKey = '52a620ae';
+let movieDetails;
 
 searchBtnNode.addEventListener('click', getMovieNameFromUser);
 
@@ -77,7 +78,7 @@ function loadMovieDetails() {
 }
 
 function renderMovieDetails(details) {
-    let movieDetails = document.createElement('div');
+    movieDetails = document.createElement('div');
     movieDetails.classList.add('cont');
 
     movieDetails.innerHTML = `<button id="home-link-btn" onclick="backToMainPage()" class="home-link"> ← Назад до пошуку</button>
@@ -108,5 +109,7 @@ function renderMovieDetails(details) {
 function backToMainPage() {
     mainPageListNode.classList.remove('main-page');
     movieCardNode.classList.add('movie-page');
+    movieDetails.innerHTML = '';
+    movieDetails.classList.remove('cont');
 }
 
